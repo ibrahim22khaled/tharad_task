@@ -165,10 +165,15 @@ class DioHelper {
         return ServerException(message: 'Request cancelled');
 
       case DioExceptionType.connectionError:
-        return ServerException(message: 'No internet connection');
+        return ServerException(
+          message:
+              'ConnErr: ${e.message} || ${e.error} || ${e.error.runtimeType}',
+        );
 
       default:
-        return UnExpectedException(message: e.message ?? 'Unexpected error');
+        return UnExpectedException(
+          message: 'Default: ${e.type} || ${e.message} || ${e.error}',
+        );
     }
   }
 }
