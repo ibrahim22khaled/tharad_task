@@ -9,6 +9,8 @@ import 'package:tharad_task/features/auth/presentation/cubits/register/register_
 import 'package:tharad_task/features/auth/presentation/screens/login_screen.dart';
 import 'package:tharad_task/features/auth/presentation/screens/otp_screen.dart';
 import 'package:tharad_task/features/auth/presentation/screens/registration_screen.dart';
+import 'package:tharad_task/features/home/presentation/cubits/get_profile/get_profile_cubit.dart';
+import 'package:tharad_task/features/home/presentation/cubits/update_profile/update_profile_cubit.dart';
 import 'package:tharad_task/features/home/presentation/screens/home_screen.dart';
 import 'package:tharad_task/features/home/presentation/screens/profile_screen.dart';
 import 'package:tharad_task/features/home/presentation/widgets/home_shell.dart';
@@ -66,7 +68,16 @@ GoRouter createRouter(AppSessionCubit authCubit) => GoRouter(
     ),
     GoRoute(path: '/home', builder: (context, state) => const HomeScreen()),
     GoRoute(path: '/profile', builder: (context, state) => const ProfileScreen()),
-    GoRoute(path: '/homeshell', builder: (context, state) => const HomeShell()),
+     GoRoute(
+      path: '/homeshell',
+      builder: (context, state) => MultiBlocProvider(
+        providers: [
+          BlocProvider(create: (_) => getIt<GetProfileCubit>()..getProfile()),
+          BlocProvider(create: (_) => getIt<UpdateProfileCubit>()),
+        ],
+        child: const HomeShell(),
+      ),
+    ),
   ],
 );
 

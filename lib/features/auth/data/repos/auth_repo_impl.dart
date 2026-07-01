@@ -61,4 +61,15 @@ class AuthRepositoryImpl implements AuthRepository {
           return Right(entity);
         },
       );
+      @override
+Future<Either<Failure, void>> logout() async {
+  try {
+    await _dataSource.logout();
+  } catch (_) {
+   
+  } finally {
+    await _secureStorage.clearTokens();
+  }
+  return const Right(null);
+}
 }

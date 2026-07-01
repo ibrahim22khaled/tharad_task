@@ -19,7 +19,7 @@
   "allowedFiles":"الملفات المسموح بها ",
   "maxSize":"أكبر حجم مسموح به",
   "userName":"اسم المستخدم",
-  "passwordConfirmation":"تأكيد كلمة المرور",
+  "passwordConfirmation":"تأكيد كلمة المرور الجديدة",
   "haveAccount":"هل لديك حساب بالفعل؟",
   "apply":"تطبيق",
   "verificationCode":"رمز التحقق",
@@ -29,7 +29,6 @@
   "next":"المتابعة",
   "oldPassword":"كلمة المرور القديمة",
   "newPassword":"كلمة المرور الجديدة",
-  "newPasswordConfirmation":"تأكيد كلمة المرور",
   "saveChanges":"تأكيد التغييرات",
   "changesSavedSuccessfully":"تم حفظ التغييرات بنجاح",
   "changesSavedFailure":"فشل في حفظ التغييرات",
@@ -57,6 +56,7 @@
   "camera":"الكاميرا",
   "imageReguired":"الصورة الشخصية مطلوبة",
   "otpError":"رمز التحقق خاطئ",
-  "loginSuccessfully":"تم تسجيل الدخول بنجاح"
+  "loginSuccessfully":"تم تسجيل الدخول بنجاح",
+  "passwordChangedPleaseLogin":"تم تغيير كلمة المرور بنجاح. من فضلك قم بتجسل الدخول"
 
 }

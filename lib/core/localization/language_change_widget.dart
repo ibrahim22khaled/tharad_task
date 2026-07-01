@@ -16,6 +16,7 @@ class LanguageChangeWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
       children: [
         BlocBuilder<LocaleCubit, LocaleState>(
           builder: (context, localeState) {
@@ -25,7 +26,7 @@ class LanguageChangeWidget extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    localeState.locale.languageCode == 'ar' ? 'العربية' : 'English',
+                    localeState.locale.languageCode == 'ar' ? 'English' : 'العربية',
                     style: AppTextStyles.medium12.copyWith(color: AppColors.textColor),
                   ),
                   Gap(6.w),

@@ -19,7 +19,7 @@
   "allowedFiles":"Allowed files",
   "maxSize":"Max size",
   "userName":"User name",
-  "passwordConfirmation":"Confirm password",
+  "passwordConfirmation":"Confirm new password",
   "haveAccount":"Do you have account?",
   "apply":"Apply",
   "verificationCode":"Verification Code",
@@ -29,7 +29,6 @@
   "next":"Continue",
   "oldPassword":"Old password",
   "newPassword":"New password",
-  "newPasswordConfirmation":"Confirm new password",
   "saveChanges":"Save changes",
   "changesSavedSuccessfully":"Changes Saved Successfully",
   "changesSavedFailure":"Failed to save changes",
@@ -57,5 +56,6 @@
   "camera":"Camera",
   "imageReguired":"The image is required",
   "otpError":"Wrong OTP",
-  "loginSuccessfully":"Login Successfully"
+  "loginSuccessfully":"Login Successfully",
+  "passwordChangedPleaseLogin":"Password changed successfully. Please Login."
 }

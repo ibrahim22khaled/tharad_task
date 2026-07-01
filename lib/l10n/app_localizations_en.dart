@@ -68,7 +68,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get userName => 'User name';
 
   @override
-  String get passwordConfirmation => 'Confirm password';
+  String get passwordConfirmation => 'Confirm new password';
 
   @override
   String get haveAccount => 'Do you have account?';
@@ -97,9 +97,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get newPassword => 'New password';
-
-  @override
-  String get newPasswordConfirmation => 'Confirm new password';
 
   @override
   String get saveChanges => 'Save changes';
@@ -185,4 +182,8 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get loginSuccessfully => 'Login Successfully';
+
+  @override
+  String get passwordChangedPleaseLogin =>
+      'Password changed successfully. Please Login.';
 }

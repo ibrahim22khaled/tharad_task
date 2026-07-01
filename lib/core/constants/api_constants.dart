@@ -10,6 +10,7 @@ class ApiConstants {
   static String loginUrl = ApiConstants.addBaseUrl("auth/login");
   static String registerUrl = ApiConstants.addBaseUrl("auth/register");
   static String otpUrl = ApiConstants.addBaseUrl("otp");
+  static const String logoutUrl = 'auth/logout';
   //Profile
   static String getProfileUrl = ApiConstants.addBaseUrl("profile-details");
   static String updateProfileUrl = ApiConstants.addBaseUrl("Update-Profile");

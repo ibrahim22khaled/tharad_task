@@ -67,7 +67,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get userName => 'اسم المستخدم';
 
   @override
-  String get passwordConfirmation => 'تأكيد كلمة المرور';
+  String get passwordConfirmation => 'تأكيد كلمة المرور الجديدة';
 
   @override
   String get haveAccount => 'هل لديك حساب بالفعل؟';
@@ -96,9 +96,6 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get newPassword => 'كلمة المرور الجديدة';
-
-  @override
-  String get newPasswordConfirmation => 'تأكيد كلمة المرور';
 
   @override
   String get saveChanges => 'تأكيد التغييرات';
@@ -182,4 +179,8 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get loginSuccessfully => 'تم تسجيل الدخول بنجاح';
+
+  @override
+  String get passwordChangedPleaseLogin =>
+      'تم تغيير كلمة المرور بنجاح. من فضلك قم بتجسل الدخول';
 }

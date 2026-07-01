@@ -215,7 +215,7 @@ abstract class AppLocalizations {
   /// No description provided for @passwordConfirmation.
   ///
   /// In en, this message translates to:
-  /// **'Confirm password'**
+  /// **'Confirm new password'**
   String get passwordConfirmation;
 
   /// No description provided for @haveAccount.
@@ -271,12 +271,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'New password'**
   String get newPassword;
-
-  /// No description provided for @newPasswordConfirmation.
-  ///
-  /// In en, this message translates to:
-  /// **'Confirm new password'**
-  String get newPasswordConfirmation;
 
   /// No description provided for @saveChanges.
   ///
@@ -439,6 +433,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Login Successfully'**
   String get loginSuccessfully;
+
+  /// No description provided for @passwordChangedPleaseLogin.
+  ///
+  /// In en, this message translates to:
+  /// **'Password changed successfully. Please Login.'**
+  String get passwordChangedPleaseLogin;
 }
 
 class _AppLocalizationsDelegate

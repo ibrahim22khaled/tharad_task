@@ -13,7 +13,7 @@ import 'package:tharad_task/core/values/app_colors.dart';
 import 'package:tharad_task/core/values/app_text_style.dart';
 import 'package:tharad_task/features/auth/presentation/cubits/register/register_cubit.dart';
 import 'package:tharad_task/features/auth/presentation/cubits/register/register_state.dart';
-import 'package:tharad_task/features/auth/presentation/widgets/image_picker_widget.dart';
+import 'package:tharad_task/core/common/widgets/image_picker_widget.dart';
 import 'package:tharad_task/gen/assets.gen.dart';
 import 'package:tharad_task/l10n/app_localizations.dart';
 
